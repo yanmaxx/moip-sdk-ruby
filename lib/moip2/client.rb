@@ -2,6 +2,7 @@ module Moip2
 
   class Client
     include HTTParty
+    ssl_version = :TLSv1_2
 
     attr_reader :env, :auth, :uri
 
